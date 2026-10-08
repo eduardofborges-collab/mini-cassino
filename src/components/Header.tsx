@@ -1,6 +1,9 @@
 function Header() {
   return (
-    <header>Nexus Cassino | Saldo: 1000 créditos</header>
+    <header>
+      <h1>Nexus Cassino</h1> 
+      <div>Saldo: 1000 créditos</div>
+    </header>
   );
 }
 
