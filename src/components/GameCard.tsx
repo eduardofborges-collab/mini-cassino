@@ -1,22 +1,19 @@
 type GameCardProps = {
-    icon: string; 
-    nome: string;
-    descricao: string;
-}
+  icon: string;
+  name: string;
+  description: string;
+  onPlay: () => void;
+};
 
-
-function GameCard( {icon, nome, descricao}: GameCardProps) {
+function GameCard({ icon, name, description, onPlay }: GameCardProps) {
   return (
     <article>
-        <span>{icon}</span>
-        
-        <h2>{nome}</h2>
-
-        <p>{descricao}</p>
-
-        <button>Jogar</button>
+      <span>{icon}</span>
+      <h2>{name}</h2>
+      <p>{description}</p>
+      <button onClick={onPlay}>Jogar</button>
     </article>
-  )
+  );
 }
 
 export default GameCard;
